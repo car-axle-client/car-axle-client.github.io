@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --text: #dbfbed;
+    --background: #010503;
+    --primary: #27ffa5;
+    --secondary: #05291a;
+    --accent: #1bde8d;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.seo {
+    display: none;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width:100%;
+
+}
+
+.centered img {
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.centered button {
+    width: 20vw;
+    height: 2.75vw;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--background);
+    font-size: 1.2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.9s;
+}
+.centered button:hover {
+    background-color: var(--accent);
+}
+.centered button:active {
+    background-color: var(--secondary);
+}
+
+fieldset {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--primary);
+    padding: 0 10px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 2.25vw;
+    height: 1vw;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 1.2vw;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+#red {
+    background-color: #d01919;
+}
+
+#blue {
+    background-color: #227be7;
+}
+
+#green {
+    background-color: #0be161;
+}
