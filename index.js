@@ -2,8 +2,10 @@
 const button = document.getElementById('loader-button');
 const one = document.getElementById('1');
 const two = document.getElementById('2');
+const three = document.getElementById('3');
 
 two.style.display = 'none';
+three.style.display = 'none';
 
 button.onclick = function() {
 
@@ -14,8 +16,10 @@ button.onclick = function() {
     two.style.opacity = '1';
 
     button.onclick = function() {
-        button.innerHTML = `drag into your bookmarks bar`;
-        button.style.width = '25vw';
+        button.innerHTML = `:/`;
+        button.style.width = '10vw';
+        two.style.display = 'none';
+        three.style.display = 'block';
     }
 
 };

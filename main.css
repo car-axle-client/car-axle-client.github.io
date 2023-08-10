@@ -94,7 +94,11 @@ label {
     font-size: 1.2vw;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.9s;
+    transition: 0.1s;
+}
+
+input[type='radio']:checked + label {
+    transform: scale(1.1);
 }
 
 #red {
@@ -107,4 +111,24 @@ label {
 
 #green {
     background-color: #0be161;
+}
+
+#purple {
+    background-color: #d703fc;
+}
+
+#yellow {
+    background-color: #f7e806;
+}
+
+#blurple {
+    background-color: #7221fe;
+}
+
+#cutepink {
+    background-color: #ff7ac7;
+}
+
+#lightblue {
+    background-color: #6dd8eb;
 }
