@@ -14,6 +14,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    text-decoration: none;
     margin: 0;
     text-align: center;
     padding: 0;
@@ -131,4 +132,8 @@ input[type='radio']:checked + label {
 
 #lightblue {
     background-color: #6dd8eb;
+}
+
+a {
+    text-decoration: none;
 }
