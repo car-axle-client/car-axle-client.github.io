@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+ 
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;                   
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+
+@keyframes Down {
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+* {
+    color: white;
+}
+
+body, html {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#load {
+    position: fixed;
+    height:100%;
+    width:100%;
+    background-color: black;
+    pointer-events: none;
+    z-index: 10000000;
+}
+
+#main-container {
+    text-shadow: 2px 0 0.1px rgba(0,30,255,0.5), -2px 0 0.1px rgba(255,0,80,0.3), 0 0 1px;
+    left: 20%;
+    top: 20%;
+    position:fixed;
+}
+
+#main-container h1 {
+    font-size: 5vw;
+    line-height: 0;
+    animation: Down 1s forwards
+}
+
+#main-container h2 {
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
+#main-container h3 {
+    font-size: 2vw;
+    line-height: 2vw;
+    transition: 0.5s;
+}
+
+#main-container h3:hover {
+    text-shadow: 5px 0 1.3px rgba(0,30,255,0.5), -5px 1.3px rgba(255,0,80,0.3), 0px 0 1.3px;
+
+}
+
+#scanlines {
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 1000000;
+    position:fixed;
+    background-size: 100% 2px, 3px 100%;
+    height: 100%;
+    width: 100%;
+    animation: flicker 1s infinite;
+    pointer-events: none;
+}
+
+#img-container {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+@keyframes introVideoAnim {
+    0% {
+        transform: rotate(60deg) translate(-30%, 100%);
+        opacity: .05;
+    }
+    100% {
+        transform: rotate(0deg) translate(0,0);
+        opacity: 0.25;
+    }
+        
+}
+
+video {
+    width:80%;
+    border-radius:20px;
+    position:fixed;
+    left:10%;
+    top: 10%;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 0;
+    animation: introVideoAnim 3s forwards
+}
+
+
+fieldset {
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 0;
+    width:44%;
+    padding: 0.25vw 1vw;
+}
+
+legend {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-left: 40px;
+    padding: 0 10px;
+}
+
+label {
+    width:2.25vw;
+    height: 1.75vw;
+    margin-right:0.50vw;
+    border-radius: 5px;
+    display:inline-block;
+    border: 2px solid black;
+}
+
+label[for="discord"] {
+    background-color: #5200FF  
+}
+
+label[for="orange"] {
+    background-color: #FF5C00  
+}
+
+label[for="sky"] {
+    background-color: #5CF5FF 
+}
+
+label[for="gaypink"] {
+    background-color: #FF66DD
+}
+input[type='radio'] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    border: 2px solid white;
+}
+
+img {
+    width:50%;
+    z-index:-10000;
+    left:10%;
+    position:absolute;
+    top:10%;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+button {
+    padding: 0.25vw;
+    font-family: 'Nunito';
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    border: none;
+    font-size: 1vw;
+    margin-top: 2vw;
+}
