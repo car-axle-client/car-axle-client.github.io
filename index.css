@@ -173,8 +173,8 @@ fieldset {
     border: 3px solid white;
     border-radius: 10px;
     margin: 0;
-    width:44%;
-    padding: 0.25vw 1vw;
+    width: fit-content;
+    padding: 1vw 1vw;
 }
 
 legend {
@@ -185,35 +185,27 @@ legend {
 }
 
 label {
-    width:2.25vw;
-    height: 1.75vw;
+    width:4.25vw;
+    height: 2.75vw;
     margin-right:0.50vw;
     border-radius: 5px;
     display:inline-block;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
-label[for="discord"] {
-    background-color: #5200FF  
+label[for="dark"] {
+    background-color: teal  
 }
 
-label[for="orange"] {
-    background-color: #FF5C00  
-}
-
-label[for="sky"] {
-    background-color: #5CF5FF 
-}
-
-label[for="gaypink"] {
-    background-color: #FF66DD
+label[for="light"] {
+  background-color: turquoise
 }
 input[type='radio'] {
     display: none;
 }
 
 input[type="radio"]:checked+label {
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
 img {
@@ -227,11 +219,11 @@ img {
 }
 
 button {
-    padding: 0.25vw;
+    padding: 0.4vw;
     font-family: 'Nunito';
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgb(50, 50, 50);
     border: none;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: 2vw;
 }
