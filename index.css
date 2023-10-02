@@ -116,12 +116,17 @@ a {
 }
 
 #main-container h3 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     line-height: 2vw;
     transition: 0.5s;
 }
 
-#main-container h3:hover {
+#main-container h4 {
+    font-size: 2vw;
+    line-height: 2vw;
+    transition: 0.5s;
+}
+#main-container a:hover {
     text-shadow: 5px 0 1.3px rgba(0,30,255,0.5), -5px 1.3px rgba(255,0,80,0.3), 0px 0 1.3px;
 
 }
