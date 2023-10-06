@@ -1,35 +1,4 @@
-console.log("bruh")
-var headElement = document.getElementsByTagName("head")[0];
 
-
-document.getElementById("load").animate([
-    {opacity:1},
-    {opacity:0}
-],{duration: 2000, fill: "forwards"})
-
-
-
-function switchPage(e) {
-    e.preventDefault()
-    newLocation = this.href;
-    document.getElementById("load").animate([
-        {opacity: 0},
-        {opacity: 1},
-       ],{duration:500, fill:"forwards"})
-    setTimeout(() => {
-        window.location = newLocation
-    }, 500);
-}
-
-
-const links = document.getElementsByTagName("a")
-for (link of links) {
-    if (link.id == "zebutton") {continue}
-    link.onclick = switchPage
-}
-
-
-// retarded stuff
 const button = document.getElementById("zebutton")
 const image = document.getElementById("zeimg")
 const radioButtons = document.querySelectorAll('input[name="colors"]');
