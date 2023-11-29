@@ -13,7 +13,7 @@ body, html {
 
 #image {
     width: 100%;
-    height: 300vh;
+    height: 500%;
     margin: 0;
     display: flex;
     flex-direction: column;
