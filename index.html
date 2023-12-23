@@ -1,80 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>car axle client</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles.css" rel="stylesheet">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2615157496892750"
-     crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="image">
-            <div id="header">
-                <h1>car axle client</h1>
-                <h2>like a games website, but better.</h2>
-                <div id="socials-container">
-                    <a href="https://github.com/car-axle-client/car-axle-client"><img src="github-mark.svg"></a>
-                    <a href="https://discord.gg/b8ACDyb2Bu"><img src="discord-mark-white.svg"></a>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
+    
+    <title>car axle client</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="h-screen bg-gray-800 scale-90 rounded-3xl text-left overflow-scroll">
+        <div id="home">
+            <div class="flex flex-col justify-center items-center mt-32">
+                <div class="flex w-3/5 flex-col">
+                    <h1 class="text-8xl font-bold z-20">car axle client</h1>
+                    <h2 class="text-3xl z-20">everything you need, from games to exploits and even proxies</h2>
                 </div>
-                <div id="buttons-container">
-                    <a href="install.html"><button>Install v7</button></a>
-                    <!-- <a href="https://car-axle-client.github.io/car-axle-client/testing/index.html" target="_blank"><button style="background-color:transparent; border: 0.2vw solid cornflowerblue; box-shadow: 0 0 15px cornflowerblue;" ></button></a> -->
-                </div>
-            </div>
-            <div class="section">
-                <h2 style="margin-top: 0px;">Features</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <h3>Games loader</h3> 
-                        <p>A cool trick to allow you to play games on most websites. car axle client currently has a growing library of 25+ games for you to enjoy.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Exploits</h3>
-                        <p>car axle client has neat little tricks that make your life easier. One of them is Force Select, it allows selection on disabled elements</p>
-                    </div>
-                    <div class="card">
-                        <h3>Pocket Browser</h3> 
-                        <p>Browse through restrictions. Need to look something up but your teacher doesn't like that? Just use car axle client :).</p>
-                    </div>
-                    <div class="card">
-                        <h3>Youtube Viewer</h3>
-                        <p>Watch youtube anywhere. Just paste the id, as simple as that! Now you can not pay attention in class in a whole new way.</p>
-                    </div>
-                </div>
-            </div>
- 
-            <div class="section">
-                <h2 style="margin-top: 0px;">FAQ</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <h3>How do I request features?</h3> 
-                        <p>Go to the github and create an issue with the feature request template or dm/add me on discord (@penguinify)</p>
-                    </div>
-                    <div class="card">
-                        <h3>Can I fork/take your code?</h3>
-                        <p>car axle client is under GPL3, which means, yes, you can. But if you do please give credit, I don't really make that much money of this.</p>
-                    </div>
-                    <div class="card">
-                        <h3>How do I update?</h3> 
-                        <p>When there is a update, car axle client will give you a notification. It will give you a link to reinstall car axle client.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Will more games added?</h3>
-                        <p>Maybe, maybe not. I am currently focusing on the exploits side of car axle client and there are no future plans to add more games.</p>
-                    </div>
-                </div>           
-            </div>
-            
-            <div class="section">
-                <h3 style="margin-top:0px;">Contact me</h3>
-                <p>Discord: @penguinify</p>
-                <p>Github: Penguinify</p>
-                <p>Email: penguinifyminecraft@gmail.com</p>
-            </div>
 
-            <div class="section" style="padding: 2vw;">
-                <h3 style="margin:0px; font-size:1vw;">this website was made by penguinify for car axle client. for inquiries email at penguinifyminecraft@gmail.com</h3>
+                <div class="flex flex-row w-3/5 items-center mt-12 gap-20">
+                    <button class="bg-gray-700 p-3 rounded-3xl text-2xl" id="hometoinstall">install latest stable (v7.2)</button>
+                    <a href="https://car-axle-client.github.io/car-axle-client/testing/index.html" target="_blank">
+                        <button class="bg-green-600 p-3 rounded-3xl text-2xl">preview the v8 beta</button>
+                    </a>
+                </div>
+
+                <div class="w-3/5 flex mt-12 ml-2">
+                    <h2 class="text-4xl">features</h2>
+
+                </div>
+
+                <div class="w-3/5 text-left flex flex-row gap-20 mt-5">
+                    <div class="p-8 rounded-3xl bg-gray-700">
+                        <h3 class="text-4xl">clean ui</h3>
+                        <p class="text-justify text-xl">bookmarklets now days are ugly, we make you feel right at home with our beautiful graphics.</p>
+                    </div>
+
+                    <div class="p-8 rounded-3xl bg-gray-700">
+                        <h3 class="text-4xl">300+ games</h3>
+                        <p class="text-justify text-xl">break free and explore our large (definitely not skidded) library of games to choose from.</p>
+                    </div>
+
+                    <div class="p-8 rounded-3xl bg-gray-700">
+                        <h3 class="text-4xl">exploits</h3>
+                        <p class="text-justify text-xl">no need to keep a bookmark folder with hundreds of exploits, just have a bookmarklet that can do it all.</p>
+                    </div>
+
+                </div>
+
             </div>
-    </body>
+        </div>
+        <div id="install" class="hidden">
+            <div class="flex justify-center items-center flex-col mt-32">
+                <div class="flex w-3/5 flex-col">
+                    <h1 class="text-8xl font-bold z-20">thank you!</h1>
+                    <h2 class="text-3xl z-20">drag the button into your bookmarks bar</h2>
+                </div>
+
+                <div class="flex flex-row w-3/5 items-center mt-12 gap-20">
+                    <button class="bg-gray-700 p-3 rounded-3xl text-2xl">drag into your bookmarks bar</button>
+                    <button class="bg-gray-900 p-3 rounded-3xl text-2xl" id="installtohome">back home ➜</button>
+                </div>
+
+                <div class="flex w-3/5 mt-12 flex-col bg-gray-700 p-10 rounded-3xl">
+                    <h2 class="text-3xl">what if bookmarklets are blocked by my school?</h2>
+                    <h2 class="text-2xl">you can refer to this <a href="https://github.com/car-axle-client/car-axle-client/blob/main/docs/alternate_injection.md" class="text-teal-300">guide</a></h2>
+                    <h2 class="text-3xl mt-10">I want an older version of car axle client</h2>
+                    <h2 class="text-2xl">you can find old archives here: <a href="./oldversions/index.html" class="text-teal-300">archives</a></h2>
+                    <h2 class="text-3xl mt-10">I need help!</h2>
+                    <h2 class="text-2xl">join our <a href="https://discord.gg/4JaknS9P5p" class="text-teal-300">discord</a> and ask a question in the #questions channel</h2>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="w-3/5 items-center bg-gray-900 bottom-0 absolute p-5 rounded-3xl justify-evenly flex text-xl">
+                <a href="https://github.com/car-axle-client/car-axle-client" target="_blank">github</a>
+                <a href="https://discord.gg/4JaknS9P5p" target="_blank">discord</a>
+                <a href="https://github.com/penguinify" target="_blank">penguinify (main dev)</a>
+                <a href="https://github.com/disnos9" target="_blank">disnos9 (side dev)</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    document.getElementById("hometoinstall").addEventListener("click", () => {
+        switch_page("home", "install")
+    })
+
+    document.getElementById("installtohome").addEventListener("click", () => {
+        switch_page("install", "home")
+    })
+
+    document.getElementById("home").animate([
+        { opacity: 0, transform: "translateY(-30%)" },
+        { opacity: 1, transform: "translateY(0%)" }
+        ], {
+            duration: 500,
+            easing: 'ease-in-out',
+            fill: 'forwards'
+        })
+
+    function switch_page(from, to) {
+        let fromElement = document.getElementById(from)
+        let toElement = document.getElementById(to)
+
+        fromElement.animate([
+            { opacity: 1, transform: "translateY(0%)" },
+            { opacity: 0, transform: "translateY(30%)" }
+            ], {
+                duration: 500,
+                easing: 'ease-in-out',
+                fill: 'forwards'
+            })
+
+
+        setTimeout(() => {
+            fromElement.style.display = "none"
+            toElement.style.display = "block"
+            toElement.animate([
+                { opacity: 0, transform: "translateY(-30%)" },
+                { opacity: 1, transform: "translateY(0%)" }
+                ], {
+                    duration: 500,
+                    easing: 'ease-in-out',
+                    fill: 'forwards'
+                })
+        }, 500)
+
+    }
+</script>
+
 </html>
